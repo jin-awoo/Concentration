@@ -12,6 +12,8 @@
 		97475C5822407E900078F783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97475C5622407E900078F783 /* Main.storyboard */; };
 		97475C5A22407E920078F783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97475C5922407E920078F783 /* Assets.xcassets */; };
 		97475C5D22407E920078F783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97475C5B22407E920078F783 /* LaunchScreen.storyboard */; };
+		9767864D2249BF9300CD4198 /* Concentration 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767864C2249BF9300CD4198 /* Concentration 2.swift */; };
+		9767864F2249C31F00CD4198 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767864E2249C31F00CD4198 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		97475C5922407E920078F783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97475C5C22407E920078F783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97475C5E22407E920078F783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9767864C2249BF9300CD4198 /* Concentration 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Concentration 2.swift"; sourceTree = "<group>"; };
+		9767864E2249C31F00CD4198 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		97475C5122407E900078F783 /* Concentration 2 */ = {
 			isa = PBXGroup;
 			children = (
+				9767864C2249BF9300CD4198 /* Concentration 2.swift */,
+				9767864E2249C31F00CD4198 /* Card.swift */,
 				97475C64224089960078F783 /* supporting files */,
 				97475C5422407E900078F783 /* ViewController.swift */,
 				97475C5622407E900078F783 /* Main.storyboard */,
@@ -145,6 +151,8 @@
 			files = (
 				97475C5522407E900078F783 /* ViewController.swift in Sources */,
 				97475C5322407E900078F783 /* AppDelegate.swift in Sources */,
+				9767864D2249BF9300CD4198 /* Concentration 2.swift in Sources */,
+				9767864F2249C31F00CD4198 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
