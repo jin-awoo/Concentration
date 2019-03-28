@@ -14,6 +14,7 @@ import Foundation
 class Concentration {
     
     var cards = [Card]()
+    var unshuffledCards = [Card]()
     
     var indexOfOneAndOnlyFaceUpCard: Int?
 
@@ -41,12 +42,21 @@ class Concentration {
     init(numberOfPairsOfCards: Int){
         for _ in 1...numberOfPairsOfCards{
             let card = Card()
-            cards += [card, card]
+            unshuffledCards += [card, card]
         }
+        cards = shuffleCards(for: unshuffledCards)
     }
     
     // TODO: shuffle the cards
     
-    
+    func shuffleCards(for cards: [Card]) -> [Card]{
+        var temp = cards
+        var shuffledCards = cards
+        for index in cards.indices {
+            let randomIndex = Int(arc4random_uniform(UInt32(temp.count)))
+            shuffledCards[index] = temp.remove(at: randomIndex)
+        }
+        return shuffledCards
+    }
     
 }
