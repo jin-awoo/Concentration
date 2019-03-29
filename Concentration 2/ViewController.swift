@@ -11,7 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     
     // UIViewController is the superclass
-    lazy var game =  Concentration(numberOfPairsOfCards: cardButtons.count/2)
+    lazy var game =  Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
+    
+    var numberOfPairsOfCards: Int {
+        return cardButtons.count/2
+    }
     
     // class has this free initializer as long as cards are defined
     
@@ -35,6 +39,8 @@ class ViewController: UIViewController {
             print("Not Set.")
         }
     }
+    
+    // MARK: ONE
     
     func updateViewFromModel(){
         for index in cardButtons.indices{
