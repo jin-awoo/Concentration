@@ -15,13 +15,14 @@ import Foundation
 struct Card {
     var isFaceUp = false
     var isMatched = false
+    var seenOrNot = false 
     var identifier: Int
     
     // static fun & var are tied to the type. Think of it as a Global function or var
     
-    private static var identifierFactory = 0
+    static var identifierFactory = 0
     
-    private  static func getUniqueIdentifier() -> Int {
+    private static func getUniqueIdentifier() -> Int {
         identifierFactory += 1
         return identifierFactory
     }

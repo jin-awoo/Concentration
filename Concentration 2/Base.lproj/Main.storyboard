@@ -199,7 +199,28 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="flip count: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcC-Rj-vsy">
-                                <rect key="frame" x="142" y="700.66666666666663" width="91" height="20.333333333333371"/>
+                                <rect key="frame" x="54.666666666666657" y="700.66666666666663" width="91" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDa-KO-7Dg">
+                                <rect key="frame" x="243" y="695" width="75" height="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hV7-LS-ek4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7z-Zh-V5L">
+                                <rect key="frame" x="68" y="630.66666666666663" width="64" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed Bonus: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-PT-oT7">
+                                <rect key="frame" x="216" y="630.66666666666663" width="121" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -207,17 +228,32 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="wcC-Rj-vsy" firstAttribute="top" secondItem="O7z-Zh-V5L" secondAttribute="bottom" constant="49.666666666666629" id="3sV-uD-i2e"/>
+                            <constraint firstItem="WQb-PT-oT7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DVZ-jp-T1n" secondAttribute="bottom" constant="213.66666666666663" id="5b8-Q7-Bh1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rDa-KO-7Dg" secondAttribute="bottom" constant="53" id="7QF-gJ-Djw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rDa-KO-7Dg" secondAttribute="trailing" constant="57" id="BXI-VC-sXz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVZ-jp-T1n" secondAttribute="trailing" constant="38" id="EAW-jJ-HCp"/>
-                            <constraint firstItem="wcC-Rj-vsy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FZ3-de-1Mz"/>
+                            <constraint firstItem="wcC-Rj-vsy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="FZ3-de-1Mz"/>
+                            <constraint firstItem="WQb-PT-oT7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="216" id="IAP-ME-lQp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O7z-Zh-V5L" secondAttribute="bottom" constant="127" id="XGF-cH-ptV"/>
+                            <constraint firstItem="rDa-KO-7Dg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DVZ-jp-T1n" secondAttribute="bottom" constant="8" symbolic="YES" id="avC-jz-iHl"/>
                             <constraint firstItem="wcC-Rj-vsy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DVZ-jp-T1n" secondAttribute="bottom" id="cP4-qJ-tZc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="O7z-Zh-V5L" secondAttribute="trailing" constant="243" id="ddp-a3-4Ya"/>
+                            <constraint firstItem="O7z-Zh-V5L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="dgC-82-hdY"/>
                             <constraint firstItem="DVZ-jp-T1n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="gsZ-Pv-cJ7"/>
+                            <constraint firstItem="O7z-Zh-V5L" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DVZ-jp-T1n" secondAttribute="bottom" constant="177" id="hK4-14-w0h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="WQb-PT-oT7" secondAttribute="trailing" constant="38" id="mDY-LW-a1j"/>
                             <constraint firstItem="DVZ-jp-T1n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="nIY-MS-OqN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wcC-Rj-vsy" secondAttribute="bottom" constant="57" id="qXk-AE-D46"/>
+                            <constraint firstItem="rDa-KO-7Dg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="wMp-fM-gs9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WQb-PT-oT7" secondAttribute="bottom" constant="127" id="xYS-iK-BSQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="wcC-Rj-vsy" id="LXx-c1-rDT"/>
+                        <outlet property="score" destination="O7z-Zh-V5L" id="fdC-KV-FVs"/>
+                        <outlet property="speedBonus" destination="WQb-PT-oT7" id="HvK-Du-Sa4"/>
                         <outletCollection property="cardButtons" destination="fVo-Jc-eGO" collectionClass="NSMutableArray" id="2yK-9C-kS2"/>
                         <outletCollection property="cardButtons" destination="beb-Aa-ShR" collectionClass="NSMutableArray" id="ZkH-xl-unn"/>
                         <outletCollection property="cardButtons" destination="WpH-Ly-zqP" collectionClass="NSMutableArray" id="Z0x-9S-2jq"/>
